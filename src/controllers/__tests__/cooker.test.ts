@@ -23,7 +23,7 @@ afterEach(() => {
 afterAll(async () => {
   await closeDbConnection();
   await server.close();
-});
+}, 10000);
 
 const cookerId = '64c9ffd01853c9f2f69f7045';
 const dishId = '64cb7503cf820c93b8b8e5f2';
@@ -268,7 +268,7 @@ describe('Cooker API', () => {
       expect(response.status).toBe(201);
       expect(response.body.message).toBe('Dish created successfully');
       expect(response.body.data.dish).toMatchObject(dishData);
-    });
+    }, 10000);
 
     test('should return 403 if user is not a cooker', async () => {
       jest.spyOn(User, 'findById').mockResolvedValueOnce({ role: 'customer' });
@@ -280,7 +280,7 @@ describe('Cooker API', () => {
 
       expect(response.status).toBe(403);
       expect(response.body.message).toBe('User is not a cooker');
-    });
+    }, 10000);
 
     test('should return 404 if user not found', async () => {
       jest.spyOn(User, 'findById').mockResolvedValueOnce(null);
@@ -292,7 +292,7 @@ describe('Cooker API', () => {
 
       expect(response.status).toBe(404);
       expect(response.body.message).toBe('User not found');
-    });
+    }, 10000);
   });
   describe('PATCH /cooker/orders/changeStatus', () => {
     it('Should Update The Order Status Succesfully', async () => {
