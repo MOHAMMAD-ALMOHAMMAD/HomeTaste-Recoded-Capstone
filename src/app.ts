@@ -6,13 +6,12 @@ import swaggerUi from 'swagger-ui-express';
 import * as dotenv from 'dotenv';
 import path from 'path';
 import errorHandler from './middlewares/error-handling';
-
-dotenv.config();
-
 import routes from './routes';
 import { connectToMongo } from './db/connection';
 import SwaggerOptions from './utils/variables';
 import './config/passport';
+
+dotenv.config();
 
 const app = express();
 app.use(cookieParser(process.env.SECRET_KEY));
@@ -22,6 +21,11 @@ app.use(passport.initialize());
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/home', (req, res) => {
+  res.render('home');
+});
 
 const swaggerSpec = swaggerJsdoc(SwaggerOptions);
 app.use(

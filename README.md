@@ -1,8 +1,8 @@
 <div align="center">
   <h1 align="center">Home Taste</h1>
 
-  <a href="https://pebble-work.herokuapp.com/api-docs/">
-    <img src="./assets/logo.png" alt="Logo" width="150" >
+  <a href="https://home-taste-api.onrender.com/api-docs">
+    <img src="./src/public/assets/logo.png" alt="Logo" width="150" >
   </a>
 
   <br>
@@ -229,11 +229,11 @@ In this diagram, you can see the various components of our REST API, such as API
 
 <br>
 
-![System Architecture Diagram](/assets/architecture.png)
+![System Architecture Diagram](./src/public/assets/architecture.png)
 
 <br>
 
-![System Architecture Diagram](/assets/routes.png)
+![System Architecture Diagram](./src/public/assets/routes.png)
 
 <br>
 
@@ -241,7 +241,7 @@ In this diagram, you can see the various components of our REST API, such as API
 
 This is known as a UML diagram, and it shows the collections used in the database, their properties, the relationships between them, and the functionality that each collection (class) can have. We chose this diagram because it contains a lot of information and will help us organize our thoughts as we implement our application.
 
-![Database Schema Design](/assets/schema.png)
+![Database Schema Design](./src/public//assets/schema.png)
 
 <h2> Installation Guide </h2>
 <hr>
@@ -281,18 +281,18 @@ This is known as a UML diagram, and it shows the collections used in the databas
 
 ## Documentation
 
-Explore our interactive documentation API [here](https://pebble-work.up.railway.app/api-docs/).
+Explore our interactive documentation API [here](https://home-taste-api.onrender.com/api-docs/).
 
 <br>
 
-![Swagger Documentation](/assets/documentation.png)
+![Swagger Documentation](./src/public/assets/documentation.png)
 
 ## Contributors
 
-| <img alt="noor" src="/assets/noor.jpg" width="180"> | <img alt="fatima" src="assets/fatima.jpeg" width="180"> | <img alt="mohammad" src="/assets/mohammed.jpg" width="180">   | <img alt="ammar" src="/assets/ammar.jpeg" width="180"> |
-| --------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------ |
-| Junior Engineer                                     | Junior Engineer                                         | Junior Engineer                                               | Junior Engineer                                        |
-| [Nur Abunamus](https://github.com/Noorin99)         | [Fatima Ali](https://github.com/fatimaali200)           | [Mohammad Almohammad](https://github.com/MOHAMMAD-ALMOHAMMAD) | [Ammar Almuain](https://github.com/MasterOfAlune)      |
+| <img alt="noor" src="./src/public/assets/noor.jpg" width="180"> | <img alt="fatima" src="./src/public/assets/fatima.jpeg" width="180"> | <img alt="mohammad" src="./src/public/assets/mohammed.jpg" width="180"> | <img alt="ammar" src="./src/public/assets/ammar.jpeg" width="180"> |
+| --------------------------------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Junior Engineer                                                 | Junior Engineer                                                      | Junior Engineer                                                         | Junior Engineer                                                    |
+| [Nur Abunamus](https://github.com/Noorin99)                     | [Fatima Ali](https://github.com/fatimaali200)                        | [Mohammad Almohammad](https://github.com/MOHAMMAD-ALMOHAMMAD)           | [Ammar Almuain](https://github.com/MasterOfAlune)                  |
 
 ## Contact
 
